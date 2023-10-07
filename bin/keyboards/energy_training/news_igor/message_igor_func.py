@@ -62,6 +62,50 @@ async def send_day_message(month_index, day_index, callback_query):
 	inline_keyboard = day_info["inline_keyboard"]
 	await send_delayed_message(callback_query.from_user.id, day_info, inline_keyboard)
 
+# Обработчик для кнопки "Сообщение за 25.09.2023"
+async def month_september_25_handler(callback_query: types.CallbackQuery):
+	await send_day_message(0, 3, callback_query)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_forward_0_3")
+async def process_callback_forward_september_25(callback_query: types.CallbackQuery):
+	await process_callback_forward(callback_query, 0, 3)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_backward_031")
+async def process_callback_backward_september_25(callback_query: types.CallbackQuery):
+	await process_callback_backward(callback_query, 0, 3)
+
+# Обработчик для кнопки "Сообщение за 19.09.2023"
+async def month_september_19_handler(callback_query: types.CallbackQuery):
+	await send_day_message(0, 2, callback_query)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_forward_0_2")
+async def process_callback_forward_september_19(callback_query: types.CallbackQuery):
+	await process_callback_forward_keyboards(callback_query, 0, 2)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_backward_0_2")
+async def process_callback_backward_september_19(callback_query: types.CallbackQuery):
+	await process_callback_backward(callback_query, 0, 2)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_forward_0_2_two")
+async def process_callback_forward_september_19(callback_query: types.CallbackQuery):
+	await process_callback_forward_two(callback_query, 0, 2)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_backward_0_2_two")
+async def process_callback_forward_september_19(callback_query: types.CallbackQuery):
+	await process_callback_forward_keyboards(callback_query, 0, 2)
+
+# Обработчик для кнопки "Сообщение за 12.09.2023"
+async def month_september_12_handler(callback_query: types.CallbackQuery):
+	await send_day_message(0, 1, callback_query)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_forward_0_1")
+async def process_callback_forward_september_12(callback_query: types.CallbackQuery):
+	await process_callback_forward(callback_query, 0, 1)
+
+@dp.callback_query_handler(lambda query: query.data == "igor_backward_0_1")
+async def process_callback_backward_september_12(callback_query: types.CallbackQuery):
+	await process_callback_backward(callback_query, 0, 1)
+
 # Обработчик для кнопки "Сообщение за 05.09.2023"
 async def month_september_05_handler(callback_query: types.CallbackQuery):
 	await send_day_message(0, 0, callback_query)

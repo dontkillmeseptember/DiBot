@@ -249,11 +249,38 @@ MESSAGES = [
 			"header": yml_loader.news_path['buttons_month']['button_nine'],
 			"message_text": yml_loader.news_path['message']['message_september_one'],
 			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_path["button_keyboards"]["buttom_news_forward"], callback_data="forward_2_0"))
+		},
+		{
+			"month": 9,
+			"day": 10,
+			"header": yml_loader.news_path['buttons_month']['button_ten'],
+			"message_text": yml_loader.news_path['message']['message_september_two'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_path["button_keyboards"]["buttom_news_forward"], callback_data="forward_2_1"))
+		},
+		{
+			"month": 9,
+			"day": 26,
+			"header": yml_loader.news_path['buttons_month']['button_one_thousand'],
+			"message_text": yml_loader.news_path['message']['message_september_three'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_path["button_keyboards"]["buttom_news_forward"], callback_data="forward_2_2"))
+		},
+		{
+			"month": 9,
+			"day": 26,
+			"header": yml_loader.news_path['buttons_month']['button_move'],
+			"message_text": yml_loader.news_path['message']['message_september_four'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_path["button_keyboards"]["buttom_news_forward"], callback_data="forward_2_3"))
 		}
 	],
     # Октябрь
 	[
-        
+        {
+			"month": 10,
+			"day": 3,
+			"header": yml_loader.news_path['buttons_month']['button_thirteen'],
+			"message_text": yml_loader.news_path['message']['message_october_one'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_path["button_keyboards"]["buttom_news_forward"], callback_data="forward_3_0"))
+		}
 	],
     # Ноябрь
 	[
@@ -275,6 +302,27 @@ MESSAGES_IGOR = [
 			"header": yml_loader.news_igor_path['buttons_month']['button_nine'],
 			"message_text": yml_loader.news_igor_path['message']['message_september_one'],
 			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_igor_path["button_keyboards"]["buttom_news_forward"], callback_data="igor_forward_0_0"))
+		},
+		{
+            "month": 9,
+			"day": 12,
+			"header": yml_loader.news_igor_path['buttons_month']['button_ten'],
+			"message_text": yml_loader.news_igor_path['message']['message_september_two'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_igor_path["button_keyboards"]["buttom_news_forward"], callback_data="igor_forward_0_1"))
+		},
+		{
+            "month": 9,
+			"day": 19,
+			"header": yml_loader.news_igor_path['buttons_month']['button_one_thousand'],
+			"message_text": yml_loader.news_igor_path['message']['message_september_three'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_igor_path["button_keyboards"]["buttom_news_forward"], callback_data="igor_forward_0_2"))
+		},
+		{
+            "month": 9,
+			"day": 26,
+			"header": yml_loader.news_igor_path['buttons_month']['button_move'],
+			"message_text": yml_loader.news_igor_path['message']['message_september_four'],
+			"inline_keyboard": InlineKeyboardMarkup().add(InlineKeyboardButton(yml_loader.news_igor_path["button_keyboards"]["buttom_news_forward"], callback_data="igor_forward_0_3"))
 		}
 	],
     # Октябрь
